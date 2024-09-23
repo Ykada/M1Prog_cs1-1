@@ -2,6 +2,7 @@ namespace HowManyClicks
 {
     public partial class Form1 : Form
     {
+        int clicks = 1
         //1) maak hier een variable (int met als naam clicks)
         private ???
         public Form1()
