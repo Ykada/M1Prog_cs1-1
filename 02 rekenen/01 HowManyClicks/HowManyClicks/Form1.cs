@@ -4,7 +4,6 @@ namespace HowManyClicks
     {
         int clicks = 1;
         //1) maak hier een variable (int met als naam clicks)
-        private int clicks;
         public Form1()
         {
             InitializeComponent(clicks);
