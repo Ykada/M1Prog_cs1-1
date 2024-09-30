@@ -76,6 +76,22 @@ namespace MovePlayer
 
         internal void DoLogic(float frametime)
         {
+            if (keydown == Keys.W)
+            {
+                MovePlayer(player.y + 1);
+            }
+            if (KeyDown == Keys.A)
+            {
+                MovePlayer(player.x - 1);
+            }
+            if (keydown == Keys.S)
+            {
+                MovePlayer(player.y - 1);
+            }
+            if (KeyDown == Keys.D)
+            {
+                MovePlayer(player.x + 1);
+            }
             //1) je ziet hieronder de code voor het bewegen van de speler.
             // - zorg ervoor dat je TEST (if) of de speler een richting in moet bewegen (bv of up true is)
             // - dan in de {} van die if zet je de de JUISTE code van hieronder.

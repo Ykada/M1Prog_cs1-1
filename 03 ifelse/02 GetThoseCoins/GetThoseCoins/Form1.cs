@@ -100,14 +100,20 @@ namespace GetThoseCoins
 
         public void DoLogic(float frametime)
         {
-
+            if ldown = true; {
+                player.x -= 112.5f * frametime;
+            }
             //1) als lDown true is dan voer je de code hieronder uit (in de  {} van de if)
             //player.x -= 112.5f * frametime;
-          
+          if rdown = true;{
+                player.x += 112.5f * frametime;
 
             //2) als rDown true is dan voer je de code hieronder uit (in de  {} van de if)
             //player.x += 112.5f * frametime;
-            
+            if rdown - player.x < -1{  
+             player.x = 0; }
+            if else lDown - player.x < -1{ 
+             player.x = 0; }
 
             //4) de speler kan nog buiten het scherm komen!!! los dat met een if op.
             // zet bijvoorbeeld de speler x weer terug op size of op het eind van het scherm (size*8)
@@ -125,12 +131,17 @@ namespace GetThoseCoins
             {
                 Square coin = coins[i];
                 float distToPlayer = GetDistanceToPlayer(coin);
-                //3) als de coin dicht bij de speler is dan:
-                // - gebruik je de code hieronder in de {} van de if
-                //          coins.Remove(coin);
-                // - tel je 1 bij de score op
-               
-            }
+                    if (distToPlayer > 5)
+                    {
+                        coins.RemoveAll(coin => coin.y < -10);
+                        coin + 1;
+                    }
+                        //3) als de coin dicht bij de speler is dan:
+                        // - gebruik je de code hieronder in de {} van de if
+                        //          coins.Remove(coin);
+                        // - tel je 1 bij de score op
+
+                    }
             coins.RemoveAll(coin => coin.y < -10);
         }
 
