@@ -4,42 +4,42 @@ namespace SquareCommand
 {
     internal class Square
     {
-        public int x, y;
+        public int ix, iy;
         internal Brush color = Brushes.Red;
 
         internal void MoveUp(Level level)
         {
-            Tile next = level.GetTile(x, y - 1);
+            Tile next = level.GetTile(ix, iy - 1);
             if (next.blocking == false)
             {
-                y--;
+                iy--;
 
             }
         }
         internal void MoveDown(Level level)
         {
-            Tile next = level.GetTile(x, y + 1);
+            Tile next = level.GetTile(ix, iy + 1);
             if (next.blocking == false)
             {
-                y++;
+                iy++;
 
             }
         }
         internal void MoveLeft(Level level)
         {
-            Tile next = level.GetTile(x - 1, y);
+            Tile next = level.GetTile(ix - 1, iy);
             if (next.blocking == false)
             {
-                x--;
+                ix--;
 
             }
         }
         internal void MoveRight(Level level)
         {
-            Tile next = level.GetTile(x+1, y );
+            Tile next = level.GetTile(ix+1, iy );
             if (next.blocking == false)
             {
-                x++;
+                ix++;
 
             }
         }

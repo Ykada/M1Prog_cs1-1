@@ -4,7 +4,7 @@
     {
         internal bool blocking = false;
         internal Brush color = Brushes.Black;
-        internal int x, y;
+        internal int ix, iy;
 
     }
 }
