@@ -40,8 +40,8 @@ namespace SquareCommand
         private void CreateTile(string[] level, int y, int x)
         {
             tiles[y][x] = new Tile();
-            tiles[y][x].x = x;
-            tiles[y][x].y = y;
+            tiles[y][x].ix = x;
+            tiles[y][x].iy = y;
 
             if (level[y][x] == '#')
             {

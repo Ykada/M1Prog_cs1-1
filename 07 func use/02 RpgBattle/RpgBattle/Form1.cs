@@ -31,6 +31,7 @@ namespace RpgBattle
 
         //monsterHealth -= damage;
         //monsterhealth.Text = monsterHealth.ToString();
+        // monsterHealthLabel.Text = monsterHealth.ToString();
 
 
         private void attack_Click(object sender, EventArgs e)

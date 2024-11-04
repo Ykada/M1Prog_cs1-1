@@ -11,12 +11,10 @@ namespace RpgBattle
         {
             InitializeComponent();
 
-            //2) vervang de code hieronder door de updateMonsterHealth();
-            monsterhealth.Text=monsterHealth.ToString();
+            UpdateMonsterHealth();
         }
-        private Func = new monsterHealth;
         //1) maak hier een nieuwe function:
-        private void UpdateMonsterHealth(int monsterHealth) {
+        private void UpdateMonsterHealth() {
             monsterhealth.Text = monsterHealth.ToString();
         }
         // UpdateMonsterHealth
@@ -27,9 +25,8 @@ namespace RpgBattle
         {
 
             monsterHealth -= damage;
-            private Monsterhealth = monsterhealth();
+            UpdateMonsterHealth();
             //3) deze code was ook dubbel, gebruik hier ook de function zodat die code wegkan
-            monsterhealth.Text = monsterHealth.ToString();
         }
         private void attack_Click(object sender, EventArgs e)
         {
