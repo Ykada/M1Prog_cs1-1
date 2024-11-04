@@ -19,7 +19,6 @@ namespace Winkelen
 
         private void calculateTotal_Click(object sender, EventArgs e)
         {
-            //1) reken hier de totaal prijs uit
             double total = 0;
 
             totalPrice.Text = total.ToString();
@@ -27,7 +26,7 @@ namespace Winkelen
 
         private void koopPs5_Click(object sender, EventArgs e)
         {
-            ps5s++;
+            ps5s;
             labelPs5Amount.Text = ps5s.ToString();
         }
 
@@ -39,18 +38,18 @@ namespace Winkelen
 
         private void koopSponge_Click(object sender, EventArgs e)
         {
-            sponge++;
+            sponge;
             labelSpongeAmount.Text = sponge.ToString();
         }
 
         private void koopSpiderman_Click(object sender, EventArgs e)
         {
-            spiderman++;
+            spiderman;
             labelSpiderAmount.Text = spiderman.ToString();
         }
         private void koopElden_Click(object sender, EventArgs e)
         {
-            elden++;
+            elden;
             labelEldenAmount.Text = elden.ToString();
         }
     }
