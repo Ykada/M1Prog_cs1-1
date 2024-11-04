@@ -27,7 +27,7 @@ namespace RpgBattle
         {
 
             monsterHealth -= damage;
-            private void Monsterhealth = new monsterhealth();
+            private Monsterhealth = monsterhealth();
             //3) deze code was ook dubbel, gebruik hier ook de function zodat die code wegkan
             monsterhealth.Text = monsterHealth.ToString();
         }
